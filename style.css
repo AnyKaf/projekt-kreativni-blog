@@ -3,6 +3,86 @@ html { box-sizing: border-box; }
 
 :root {
   /* zde vytvoř svoje css proměnné */
+--sirkaStranky: 48rem;
+--fontNadpisy: Poppins, sans-serif;
+--fontText: Open Sans, sans-serif;
+--okrajObrazku: 12px; 
+--marginObrazku: 20px;
+--okrajClovicka: 50%;
+--barvaHeader: white;
+--barvaTextu: #70666c;
+--primarniBarva: #f24e7b;
+--sekundarniBarva: #931394;
+--velikostHlavniNadpis: 4rem;
+--textHeader: 1.4rem;
+--nadpisClanku: 1.6rem;
+--text: 1.125rem;
+--avatarText: 1rem;
+}
 
+body{
+    font-family: var(--fontText);
+    margin: 0;
+}
+.header{
+    margin: auto;
+    color: var(--barvaHeader);
+    background-color: var(--primarniBarva);
+    padding-block: 100px;
+    background: url(images/header-bg.jpg) no-repeat center/cover;
+}
+.header__description{
+    font-size: var(--textHeader);
+    font-family: var(--fontNadpisy);
+    color: rgba(255, 255, 255, 0.7)
+}
+header a{
+    width: 250px;
+    padding: 10px 20px;
+    border: 1px var(--barvaHeader) solid;
+    text-decoration: none;
+    font-size: var(--textHeader);
+    color: var(--barvaHeader);
+    border-radius: 50px;
+    background-image: linear-gradient(to right top, var(--primarniBarva),var(--sekundarniBarva));
+    display: inline-block;
+    font-family: var(--fontNadpisy)
+}
+h1{
+    color: var(--barvaHeader);
+    font-family: var(--fontNadpisy);
+    font-size: var(--velikostHlavniNadpis);
+    margin: 0;
+}
+h2 a{
+    font-family: var(--fontNadpisy);
+    font-size: var(--nadpisClanku);
+    color: var(--primarniBarva);
+}
+.container{
+    width: var(--sirkaStranky);
+    margin: auto;
+}
+.article{
+    float: left;
+    color: var(--barvaTextu);
+    font-size: var(--text);
+}
+.article__image{
+    display: block;
+    float: right;
+    border-radius: var(--okrajObrazku);
+    margin-left: var(--marginObrazku);
+}
+.article__meta{
+    font-size: var(--avatarText);
+    font-family: var(--fontNadpisy);
+    overflow: auto;
+    margin-block: auto;
+}
+.article__avatar{
+    margin-right: var(--marginObrazku);
+    float: left;
+    border-radius: var(--okrajClovicka);
 }
 
