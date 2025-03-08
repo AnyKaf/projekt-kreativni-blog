@@ -77,12 +77,11 @@ h2 a{
 .article__meta{
     font-size: var(--avatarText);
     font-family: var(--fontNadpisy);
-    overflow: auto;
-    margin-block: auto;
 }
+
 .article__avatar{
     margin-right: var(--marginObrazku);
-    float: left;
     border-radius: var(--okrajClovicka);
+    vertical-align: middle;
 }
 
